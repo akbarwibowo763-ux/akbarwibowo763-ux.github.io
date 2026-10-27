@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aqilla Akbar Wibowo | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f5;
+    color: #18181b;
+    line-height: 1.7;
+}
+
+header {
+    background: #111318;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #d4d4d8;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.hero {
+    background: #111318;
+    color: white;
+    padding: 100px 8%;
+}
+
+.hero small {
+    color: #a1a1aa;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.hero p {
+    max-width: 650px;
+    color: #d4d4d8;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 22px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-white {
+    background: white;
+    color: #111318;
+}
+
+.button-outline {
+    border: 1px solid #71717a;
+    color: white;
+}
+
+section {
+    padding: 65px 8%;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about {
+    background: white;
+}
+
+.description {
+    max-width: 750px;
+    color: #52525b;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.skills span {
+    border: 1px solid #d4d4d8;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e4e4e7;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #52525b;
+    font-size: 14px;
+}
+
+.experience {
+    background: white;
+}
+
+.contact {
+    background: #111318;
+    color: white;
+}
+
+.contact p {
+    color: #d4d4d8;
+    margin: 10px 0;
+}
+
+footer {
+    background: #09090b;
+    color: #a1a1aa;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+@media (max-width: 650px) {
+    header {
+        gap: 15px;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-right: 12px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">AKBAR.PORTFOLIO</div>
+
+    <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <small>PORTOFOLIO TEKNIK</small>
+
+    <h1>Aqilla Akbar Wibowo</h1>
+
+    <p>
+        Mahasiswa D3 Teknik Telekomunikasi di Politeknik Negeri Semarang.
+        Memiliki pengalaman praktik kelistrikan dan sedang mengembangkan
+        kemampuan di bidang networking serta IT infrastructure.
+    </p>
+
+    <a href="#proyek" class="button button-white">
+        Lihat Proyek
+    </a>
+
+    <a href="#kontak" class="button button-outline">
+        Hubungi Saya
+    </a>
+</section>
+
+<section class="about" id="tentang">
+    <h2>Tentang Saya</h2>
+
+    <p class="description">
+        Saya memiliki pengalaman praktik instalasi dan troubleshooting
+        kelistrikan, serta perancangan rangkaian dan perakitan panel
+        kendali motor forward-reverse.
+
+        Melalui pendidikan dan pengalaman magang, saya terus mempelajari
+        jaringan komputer, Linux server, dan teknologi Internet of Things.
+    </p>
+
+    <div class="skills">
+        <span>Instalasi Kelistrikan</span>
+        <span>Troubleshooting Listrik</span>
+        <span>Panel Forward-Reverse</span>
+        <span>IP & Subnetting</span>
+        <span>Router & Switch</span>
+        <span>Linux Server</span>
+        <span>ESP32 / IoT</span>
+    </div>
+</section>
+
+<section id="proyek">
+    <h2>Proyek Pilihan</h2>
+
+    <p class="description">
+        Dokumentasi pengalaman praktik dan proyek teknis.
+    </p>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>Instalasi Kelistrikan</h3>
+            <p>
+                Pengalaman praktik instalasi listrik bangunan dan
+                penanganan gangguan kelistrikan.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Panel Forward-Reverse</h3>
+            <p>
+                Pengalaman merancang rangkaian dan merakit panel
+                kendali motor listrik yang telah melalui pengujian.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Networking & Linux</h3>
+            <p>
+                Dokumentasi proyek kuliah dan praktikum jaringan
+                komputer yang akan ditambahkan.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>ESP32 / IoT</h3>
+            <p>
+                Dokumentasi proyek mikrokontroler dan Internet
+                of Things yang pernah dikerjakan.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="experience" id="pengalaman">
+    <h2>Pengalaman</h2>
+
+    <h3>Praktik Kelistrikan</h3>
+
+    <p class="description">
+        Terlibat dalam pekerjaan instalasi listrik bangunan,
+        troubleshooting kelistrikan, dan perakitan panel kontrol.
+    </p>
+
+    <br>
+
+    <h3>Magang Bidang Jaringan</h3>
+
+    <p class="description">
+        Sedang menjalani pengalaman magang di bidang jaringan.
+        Rincian tugas akan ditambahkan setelah dokumentasi
+        dan aktivitas magang dapat dikonfirmasi.
+    </p>
+</section>
+
+<section class="contact" id="kontak">
+    <h2>Hubungi Saya</h2>
+
+    <p>
+        Terbuka untuk kesempatan magang, pekerjaan teknis,
+        dan pengembangan proyek.
+    </p>
+
+    <p>Email: tambahkan-email-kamu</p>
+
+    <p>GitHub: akbarwibowo763-ux</p>
+</section>
+
+<footer>
+    © 2026 Aqilla Akbar Wibowo | Portfolio
+</footer>
+
+</body>
+</html>
